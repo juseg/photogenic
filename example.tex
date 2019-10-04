@@ -1,0 +1,44 @@
+% Copyright (c) 2019, Julien Seguinot <seguinot@vaw.baug.ethz.ch>
+% LaTeX Project Public License v1.3+ (http://www.latex-project.org/lppl.txt)
+
+\documentclass[aspectratio=1610]{beamer}
+
+\usetheme{photogenic}
+\title{A photogenic LaTeX Beamer theme}
+\author[seguinot@vaw.baug.ethz.ch]{J. Seguinot}
+\institute{ETH Zürich, Switzerland}
+
+% FIXME move this to theme
+% paper size and margins
+%\geometry{papersize={192mm,120mm}}
+\setbeamersize{text margin left=4mm}
+\setbeamersize{text margin right=4mm}
+%\setbeamertemplate{footline}{\vspace{2cm}}
+
+
+% ======================================================================
+\begin{document}
+% ======================================================================
+
+    \begin{backgroundframe}[b]{photo}{0.0}{}
+      \flushleft\alphabox{\textbf{\inserttitle}.}
+      \footlineextra{\insertauthor, \insertdate.}
+    \end{backgroundframe}
+
+    \begin{backgroundframe}[t]{photo}{0.0}{}
+      \flushright\alphabox{Background image with caption box.}
+      \footlineextra{Note: put source information in the footline.}
+    \end{backgroundframe}
+
+    \begin{sectionframe}{photo}{0.75}{Section frame}
+      Optional half-transparent mask and centered text.
+      \footlineextra{Foot line for source url etc.}
+    \end{sectionframe}
+
+    \begin{darkframe}{Black frame}
+      With centered text.
+    \end{darkframe}
+
+% ======================================================================
+\end{document}
+% ======================================================================
