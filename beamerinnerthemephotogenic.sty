@@ -1,0 +1,15 @@
+% Copyright (c) 2019, Julien Seguinot <seguinot@vaw.baug.ethz.ch>
+% LaTeX Project Public License v1.3+ (http://www.latex-project.org/lppl.txt)
+
+% ======================================================================
+% A photogenic LaTeX Beamer inner theme
+% ======================================================================
+
+% base theme
+\useinnertheme{rectangles}
+
+% title page
+% FIXME to use custom fonts use \usebeamerfont{title}\inserttitle etc.
+% FIXME check meaning of square brackets of defbeamertemplate in docs
+\defbeamertemplate*{title page}{photogenic}[1][]
+  {\alphabox{\textbf{\inserttitle}.\\\insertauthor, \insertdate}}
