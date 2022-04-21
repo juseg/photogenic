@@ -139,7 +139,10 @@
 % black background frame
 \newenvironment{darkframe}[2][c]% options, title
   {\setbeamercolor{background canvas}{bg=black}
+   \setbeamercolor{math text}{fg=white!75}
    \setbeamercolor{normal text}{fg=white!75}
+   \setbeamercolor{alerted text}{fg=white}
+   \setbeamercolor{structure}{fg=white}
    \usebeamercolor*{normal text}
    \begin{frame}[#1]{}\centering{\huge #2}\\\bigskip}
   {\end{frame}}
